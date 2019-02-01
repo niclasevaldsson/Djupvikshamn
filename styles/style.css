@@ -1,0 +1,504 @@
+﻿@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: 100% 'Fjalla One', "Arial Narrow", san-serif;
+    vertical-align: baseline;
+    color: #1F1F1F;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1.5;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1, h2, h3, p, a, br, hr {
+    clear: both;
+}
+
+h1 {
+    font-size: 2em;
+    padding: 0.3em 0em;
+}
+
+h2 {
+    font-size: 1.6em;
+    padding: 0.2em 0em
+}
+
+h3 {
+    font-size: 1.2em;
+    padding: 0.2em 0em
+}
+
+
+p, a {
+    font-size: .9em;
+}
+
+
+    p img {
+        padding: 0px 10px 10px 0px;
+    }
+
+dd {
+    padding-left: 2.5em;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+p {
+    padding: .3em 0px;
+    text-align: justify;
+    line-height: 150%;
+}
+
+em {
+    font-style: italic;
+}
+
+tbody tr:nth-child(odd) {
+    background: #cdc9c5
+}
+
+header {
+    width: 100%;
+    background: center no-repeat;
+}
+
+nav {
+    clear: both;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+
+    nav a {
+        text-decoration: none;
+        display: block;
+    }
+
+
+        nav a:hover, nav a:focus {
+            background-color: #cdc9c5;
+        }
+
+#layout {
+    width: 100%;
+    max-width: 63em;
+    margin: 1% auto;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+main, aside {
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+footer {
+    clear: both;
+    padding-top: 3em;
+}
+
+    footer p {
+        text-align: center;
+        border-top: 2px solid #CDC9C5;
+        background-color: #fff;
+        box-sizing: border-box;
+        padding: 2.5em 0;
+    }
+
+fieldset {
+    background-color: #cdc9c5;
+    margin: 1em auto;
+}
+
+legend {
+    border: solid thin #ff9933;
+    background-color: #fff;
+    padding: .2em;
+}
+
+
+@media all and (max-width: 679px) {
+
+
+
+    header {
+        height: 152px;
+        background-image: url(../images/layout/header700.jpg)
+    }
+
+        header h1 {
+            font-size: 2em;
+            padding: .2em .2em .2em 1.2em;
+            background-color: #b4c5cd;
+            position: absolute;
+            top: 50px;
+        }
+   
+    nav a {
+        font-size: 1.6em;
+        padding: .6em .6em;
+        border-bottom: 1px solid #cdc9c5;
+    }
+
+
+        nav a:first-child {
+            border-top: 1px solid #cdc9c5;
+        }
+
+    #valdsida {
+        text-decoration: underline #cdc9c5;
+    }
+ 
+
+    #medlemslista {
+        width: 90%;
+        max-width: 22em;
+        margin: 2em auto;
+    }
+
+        #medlemslista, #medlemslista thead, #medlemslista tbody, #medlemslista th, #medlemslista td, #medlemslista tr {
+            display: block;
+        }
+
+            #medlemslista thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            #medlemslista tr {
+                border: 1px solid #000;
+            }
+
+            #medlemslista td {
+                position: relative;
+            }
+
+                #medlemslista td:nth-of-type(1):before {
+                    content: "Förnamn";
+                }
+
+                #medlemslista td:nth-of-type(2):before {
+                    content: "Efternamn";
+                }
+
+                #medlemslista td:nth-of-type(3):before {
+                    content: "Bostadsadress";
+                }
+
+                #medlemslista td:nth-of-type(4):before {
+                    content: "Postnummer";
+                }
+
+                #medlemslista td:nth-of-type(5):before {
+                    content: "Postadress";
+                }
+
+
+                #medlemslista td:before {
+                    top: 6px;
+                    left: 6px;
+                    width: 45%;
+                    white-space: nowrap;
+                    padding-right: 10px;
+                }
+   
+    fieldset {
+        width: 80%;
+    }
+
+        fieldset p, legend {
+            margin-left: 1%;
+        }
+
+    label {
+        width: 100%;
+        float: none;
+        text-align: left;
+        display: block;
+    }
+
+    #medlemknapp {
+        margin-left: 0;
+    }
+}
+
+@media all and (min-width: 680px) {
+
+    
+    .floatright {
+        float: right;
+    }
+
+    .floatleft, p img, .bilder figure {
+        float: left;
+    }
+
+    body {
+        background-image: url(../images/layout/body-pattern.jpeg)
+    }
+
+    header h1 {
+        font-size: 2.2em;
+        background-color: #b4c5cd;
+        position: absolute;
+        top: 100px;
+    }
+
+    nav ul {
+        max-width: 66em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    nav li {
+        float: left;
+        list-style-type: none;
+    }
+
+    nav a {
+        display: inline-block;
+        text-align: center;
+        padding: .5em .5em;
+        position: relative;
+    }
+
+
+    #valdsida {
+        border-bottom: 2px solid #cdc9c5;
+    }
+
+
+    .statisk {
+        position: static;
+    }
+
+    .fixerad {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .fixednav {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .statisk {
+        position: static;
+    }
+
+    
+    #enspalt {
+        width: 100%;
+        max-width: 63em;
+        background: #fff;
+        float: left;
+        border-top: 3px solid #ff9933;
+        box-sizing: border-box;
+    }
+
+    #tvaspalt {
+        width: 65%;
+        max-width: 43em;
+        background: #fff;
+        border-top: 3px solid #ff9933;
+        box-sizing: border-box;
+        margin: 0px
+    }
+
+
+
+    main {
+        min-height: 700px;
+    }
+
+
+    .centrerad, figcaption {
+        text-align: center;
+    }
+
+
+    main hr {
+        border: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(205, 201, 197, 1), rgba(0, 0, 0, 0));
+        width: 95%;
+        margin: .9em auto;
+    }
+         
+    aside {
+        width: 30%;
+        max-width: 300px;
+        float: right;
+        background: #fff;
+        min-height: 700px;
+        border-top: 3px solid #ff9933;
+        margin: 0px;
+        box-sizing: border-box;
+        overflow: hidden;
+        padding-bottom: 3em;
+    }
+
+    #gastaside {
+        padding: 1.5em .3em;
+    }
+
+    aside img {
+        display: block;
+        margin: .6em auto;
+    }
+
+    aside hr {
+        height: 0;
+        border: 0;
+        border-top: 1px solid #cdc9c5;
+    }
+
+    aside .centrerad {
+        margin: 0 auto
+    }
+
+    fieldset {
+        width: 35em;
+    }
+
+    legend {
+        font-size: 1.8em;
+        margin-left: .2em;
+    }
+
+    fieldset p {
+        margin-left: 1em;
+        font-size: 1.1em;
+    }
+
+    label {
+        width: 6em;
+        float: left;
+        text-align: right;
+        margin-right: .8em;
+    }
+
+    #medlemknapp {
+        margin-left: 8.9em;
+    }
+         
+
+    .w400 {
+        width: 25em;
+        float: right;
+    }
+
+
+    .bilder figure {
+        padding-right: 20px;
+    }
+
+
+    table {
+        margin-left: 50px;
+    }
+
+
+
+    td, th {
+        font-size: 1.3em;
+        padding: .6em 0 .6em .6em;
+        text-align: left;
+    }
+
+
+    .colbred {
+        width: 20%;
+    }
+
+    .colbredare {
+        width: 25%;
+    }
+
+    .colsmal {
+        width: 15%;
+    }
+}
+
+@media all and (max-width: 1099px) and (min-width: 680px) {
+
+    header {
+        background: url(../images/layout/header1100.jpg);
+        width: 100%;
+        height: 239px;
+    }
+
+        header h1 {
+            padding: .1em 1em .1em 5em;
+        }
+
+    nav li {
+        float: left;
+        list-style-type: none;
+        margin: 1% 1.5%;
+    }
+}
+
+@media all and (min-width: 1100px) {
+
+    nav li {
+        margin: .1em 2.5em;
+    }
+
+    header {
+        background-image: url(../images/layout/header.png);
+        width: 100%;
+        height: 417px;
+    }
+
+        header h1 {
+            padding: .1em 2em .1em 12em;
+        }
+}
