@@ -190,7 +190,7 @@ legend {
         right: 10px;
     }
 
-    .mobilmenurader {
+    .mobilmenyrader {
         width: 35px;
         height: 5px;
         background-color: #333;
@@ -198,23 +198,22 @@ legend {
         transition: 0.4s;
     }
 
-    /* Rotate first bar */
-    .change .mobilmenurad1 {
+
+    .menysynlig #mobilmenyrad1 {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
         transform: rotate(-45deg) translate(-9px, 6px);
     }
 
-    /* Fade out the second bar */
-    .change .mobilmenurad2 {
+    .menysynlig #mobilmenyrad2 {
         opacity: 0;
     }
 
-    /* Rotate last bar */
-    .change .mobilmenurad3 {
+    .menysynlig #mobilmenyrad3 {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
     }
 
+    
    
     nav a {
         font-size: 1.6em;
@@ -226,6 +225,10 @@ legend {
         nav a:first-child {
             border-top: 1px solid #cdc9c5;
         }
+
+    .dold {
+        display: none;
+    }
 
     #valdsida {
         text-decoration: underline #cdc9c5;
